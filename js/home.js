@@ -8,10 +8,7 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
     if(pinNumberInput === '1234'){
         console.log('adding money to your account');
         const balance = document.getElementById('account-balance').innerText;
-        
-        const addMoneyNumber = parseFloat(addMoneyInput);
-        const balanceNumber = parseFloat(balance);
-        const newBalance = addMoneyNumber + balanceNumber;
+        const newBalance = parseFloat(addMoneyInput) + parseFloat(balance);
         document.getElementById('account-balance').innerText = newBalance;
     }
     else{
